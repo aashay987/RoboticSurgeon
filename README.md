@@ -1,29 +1,30 @@
-
+## Requirements
+ TensorFlow CPU
 ```bash
-# TensorFlow CPU
 pip install -r requirements.txt
-
-# TensorFlow GPU
+```
+ TensorFlow GPU
+```bash
 pip install -r requirements-gpu.txt
+```
+### Weights File
+Download the [Weights](https://drive.google.com/file/d/1-4_7BuN3fPMrSX5kJ2MKzM9KuwGwaDq8/view?usp=sharing)
 
-Download this Weight "yolov4-obj_best.weights"
-Copy and paste weights from into the 'data' folder of this repository and rename it as custom.weights.
-
-
-cd Desktop\pr1\tensorflow-yolov4-tflite
-conda env create -f conda-cpu.yml
-conda activate yolov4-cpu
-python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video 0 --output ./detections/results.avi
-
+Save the weights into the 'data' folder of this repository and rename it as
+```bash
+custom.weights
+```
 
 
-
-##Run below for creating the model
-##Run below for first time only
-cd Desktop\pr1\tensorflow-yolov4-tflite
+### Run below for creating the model
+```bash
 conda env create -f conda-cpu.yml
 conda activate yolov4-cpu
 python save_model.py --weights ./data/custom.weights --output ./checkpoints/custom-416 --input_s
-
-##To run the run the model
+```
+### To run the run the model
+```bash
 python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video 0 --output ./detections/results.avi
+```
+
+Special thanks to [The AI Guy](https://github.com/theAIGuysCode) for guidance.
