@@ -1,3 +1,12 @@
+## Project
+The proposed robotic arm would act as an additional hand to the doctor while
+performing any surgery by providing the requested surgical instrument on his/her
+request through speech command. The arm after processing these requests, would
+pick the instrument from the inventory tray which is prepared before the surgery and
+handover to the doctor.
+
+
+
 ## Requirements
  TensorFlow CPU
 ```bash
