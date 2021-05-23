@@ -5,7 +5,8 @@ request through speech command. The arm after processing these requests, would
 pick the instrument from the inventory tray which is prepared before the surgery and
 handover to the doctor.
 
-![img](https://ibb.co/8mR7Vgk)
+![Screenshot](detections/test1.gif)
+![Screenshot](detections/detection1.png)
 
 ## Datset
 The [dataset](https://www.kaggle.com/dilavado/labeled-surgical-tools) comprised for 4 labels-
@@ -43,9 +44,9 @@ python save_model.py --weights ./data/custom.weights --output ./checkpoints/cust
 python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video 0 --output ./detections/results.avi
 ```
 ## Contribution by:-
-Aashay Patel
-Anshul Rao
-Aditya Ashok
-Harivansh Narayan Singh
+1) Aashay Patel
+2) Anshul Rao
+3) Aditya Ashok
+4) Harivansh Narayan
 
 Special thanks to [The AI Guy](https://github.com/theAIGuysCode) for guidance.
