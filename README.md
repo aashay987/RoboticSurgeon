@@ -5,7 +5,14 @@ request through speech command. The arm after processing these requests, would
 pick the instrument from the inventory tray which is prepared before the surgery and
 handover to the doctor.
 
+![img](https://ibb.co/8mR7Vgk)
 
+## Datset
+The [dataset](https://www.kaggle.com/dilavado/labeled-surgical-tools) comprised for 4 labels-
+1) Scalpel
+2) Curved Mayo scissors
+3) Straight Mayo scissors
+4) Straight discection clamp
 
 ## Requirements
  TensorFlow CPU
@@ -35,5 +42,10 @@ python save_model.py --weights ./data/custom.weights --output ./checkpoints/cust
 ```bash
 python detect_video.py --weights ./checkpoints/custom-416 --size 416 --model yolov4 --video 0 --output ./detections/results.avi
 ```
+## Contribution by:-
+Aashay Patel
+Anshul Rao
+Aditya Ashok
+Harivansh Narayan Singh
 
 Special thanks to [The AI Guy](https://github.com/theAIGuysCode) for guidance.
