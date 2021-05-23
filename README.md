@@ -6,7 +6,6 @@ pick the instrument from the inventory tray which is prepared before the surgery
 handover to the doctor.
 
 ![Screenshot](detections/test1.gif)
-![Screenshot](detections/detection1.png)
 
 ## Datset
 The [dataset](https://www.kaggle.com/dilavado/labeled-surgical-tools) comprised for 4 labels-
